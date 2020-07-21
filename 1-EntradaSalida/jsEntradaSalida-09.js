@@ -6,5 +6,20 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	alert("ok");
+	var importeSueldo;
+	var porcentajeAumento;
+	var importeAumento;
+	var resultadoAumento;
+	
+
+	importeSueldo=txtIdSueldo.value;
+	importeSueldo=parseInt(importeSueldo);
+
+	porcentajeAumento=10/100;
+	importeAumento=importeSueldo*porcentajeAumento;
+	
+	resultadoAumento=importeSueldo+importeAumento;
+
+	txtIdResultado.value=resultadoAumento;
+	
 }
